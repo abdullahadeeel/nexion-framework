@@ -1,0 +1,25 @@
+{
+    "name": "phpify/framework",
+    "description": "The Phpify Framework",
+    "type": "library",
+    "require": {
+        "php": ">=8.0",
+        "phpify/config": "*",
+        "phpify/console": "*",
+        "phpify/controller": "*",
+        "phpify/database": "*",
+        "phpify/exception": "*",
+        "phpify/http": "*",
+        "phpify/middleware": "*",
+        "phpify/routing": "*",
+        "phpify/view": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpify\\": "src/"
+        },
+        "files": [
+            "src/Foundation/helpers.php"
+        ]
+    }
+}

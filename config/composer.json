@@ -1,0 +1,13 @@
+{
+    "name": "phpify/config",
+    "description": "Phpify Config component",
+    "type": "library",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpify\\Config\\": "src/"
+        }
+    }
+}
