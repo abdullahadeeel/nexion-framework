@@ -1,8 +1,8 @@
 <?php
 
-namespace Phpify\Console\Commands;
+namespace FlashPHP\Console\Commands;
 
-use Phpify\Console\Command;
+use FlashPHP\Console\Command;
 
 class MakeMigrationCommand extends Command
 {
@@ -19,7 +19,7 @@ class MakeMigrationCommand extends Command
         $name = $args[0];
         $timestamp = date('Y_m_d_His');
         $filename = "{$timestamp}_{$name}.sql";
-        $path = \Phpify\Foundation\Application::$app->getRootPath() . "/database/migrations/$filename";
+        $path = \FlashPHP\Foundation\Application::$app->getRootPath() . "/database/migrations/$filename";
 
         if (!is_dir(dirname($path))) {
             mkdir(dirname($path), 0755, true);

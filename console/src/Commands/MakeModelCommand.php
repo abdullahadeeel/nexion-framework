@@ -1,8 +1,8 @@
 <?php
 
-namespace Phpify\Console\Commands;
+namespace FlashPHP\Console\Commands;
 
-use Phpify\Console\Command;
+use FlashPHP\Console\Command;
 
 class MakeModelCommand extends Command
 {
@@ -17,14 +17,14 @@ class MakeModelCommand extends Command
         }
 
         $name = $args[0];
-        $path = \Phpify\Foundation\Application::$app->getRootPath() . "/app/Models/$name.php";
+        $path = \FlashPHP\Foundation\Application::$app->getRootPath() . "/app/Models/$name.php";
 
         if (file_exists($path)) {
             $this->error("Model already exists!");
             return 1;
         }
 
-        $content = "<?php\n\nnamespace App\Models;\n\nuse Phpify\Database\Model;\n\nclass $name extends Model\n{\n    protected string \$table = '" . strtolower($name) . "s';\n}\n";
+        $content = "<?php\n\nnamespace App\Models;\n\nuse FlashPHP\Database\Model;\n\nclass $name extends Model\n{\n    protected string \$table = '" . strtolower($name) . "s';\n}\n";
 
         if (!is_dir(dirname($path))) {
             mkdir(dirname($path), 0755, true);

@@ -1,5 +1,5 @@
 {
-    "name": "phpify/middleware",
+    "name": "flashphp/middleware",
     "description": "Phpify Middleware component",
     "type": "library",
     "require": {

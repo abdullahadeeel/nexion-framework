@@ -1,5 +1,5 @@
 {
-    "name": "phpify/http",
+    "name": "flashphp/http",
     "description": "Phpify Http component",
     "type": "library",
     "require": {

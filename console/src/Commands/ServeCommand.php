@@ -1,8 +1,8 @@
 <?php
 
-namespace Phpify\Console\Commands;
+namespace FlashPHP\Console\Commands;
 
-use Phpify\Console\Command;
+use FlashPHP\Console\Command;
 
 class ServeCommand extends Command
 {

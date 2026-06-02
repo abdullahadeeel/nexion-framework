@@ -1,9 +1,9 @@
 <?php
 
-namespace Phpify\Foundation\Providers;
+namespace FlashPHP\Foundation\Providers;
 
-use Phpify\Support\ServiceProvider;
-use Phpify\View\Engine;
+use FlashPHP\Support\ServiceProvider;
+use FlashPHP\View\Engine;
 
 class ViewServiceProvider extends ServiceProvider
 {

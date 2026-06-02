@@ -1,11 +1,11 @@
 <?php
 
-namespace Phpify\Foundation;
+namespace FlashPHP\Foundation;
 
-use Phpify\Container\Container;
-use Phpify\Http\Request;
-use Phpify\Http\Response;
-use Phpify\Support\ServiceProvider;
+use FlashPHP\Container\Container;
+use FlashPHP\Http\Request;
+use FlashPHP\Http\Response;
+use FlashPHP\Support\ServiceProvider;
 
 class Application extends Container
 {
@@ -62,18 +62,18 @@ class Application extends Container
         $this->instance(Request::class, $request);
         $this->boot();
 
-        /** @var \Phpify\Http\Kernel $kernel */
-        $kernel = $this->make(\Phpify\Http\Kernel::class);
+        /** @var \FlashPHP\Http\Kernel $kernel */
+        $kernel = $this->make(\FlashPHP\Http\Kernel::class);
         return $kernel->handle($request);
     }
 
     public function __get($key)
     {
         $aliases = [
-            'router' => \Phpify\Routing\Router::class,
-            'db' => \Phpify\Database\Database::class,
-            'view' => \Phpify\View\Engine::class,
-            'request' => \Phpify\Http\Request::class,
+            'router' => \FlashPHP\Routing\Router::class,
+            'db' => \FlashPHP\Database\Database::class,
+            'view' => \FlashPHP\View\Engine::class,
+            'request' => \FlashPHP\Http\Request::class,
         ];
 
         if (isset($aliases[$key])) {

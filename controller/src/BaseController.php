@@ -1,9 +1,9 @@
 <?php
 
-namespace Phpify\Controller;
+namespace FlashPHP\Controller;
 
-use Phpify\Http\Response;
-use Phpify\Foundation\Application;
+use FlashPHP\Http\Response;
+use FlashPHP\Foundation\Application;
 
 abstract class BaseController
 {

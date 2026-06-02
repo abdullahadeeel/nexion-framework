@@ -1,9 +1,9 @@
 <?php
 
-namespace Phpify\Database;
+namespace FlashPHP\Database;
 
-use Phpify\Database\Connection\ConnectionInterface;
-use Phpify\Database\Connection\ConnectionFactory;
+use FlashPHP\Database\Connection\ConnectionInterface;
+use FlashPHP\Database\Connection\ConnectionFactory;
 
 class Database
 {

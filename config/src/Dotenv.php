@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpify\Config;
+namespace FlashPHP\Config;
 
 class Dotenv
 {

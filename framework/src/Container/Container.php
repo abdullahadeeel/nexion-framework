@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpify\Container;
+namespace FlashPHP\Container;
 
 use Closure;
 use Exception;

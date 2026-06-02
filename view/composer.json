@@ -1,5 +1,5 @@
 {
-    "name": "phpify/view",
+    "name": "flashphp/view",
     "description": "Phpify View component",
     "type": "library",
     "require": {

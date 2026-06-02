@@ -1,9 +1,9 @@
 <?php
 
-namespace Phpify\Middleware;
+namespace FlashPHP\Middleware;
 
-use Phpify\Http\Request;
-use Phpify\Http\Response;
+use FlashPHP\Http\Request;
+use FlashPHP\Http\Response;
 
 interface Middleware
 {

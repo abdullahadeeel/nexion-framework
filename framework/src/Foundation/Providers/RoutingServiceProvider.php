@@ -1,10 +1,10 @@
 <?php
 
-namespace Phpify\Foundation\Providers;
+namespace FlashPHP\Foundation\Providers;
 
-use Phpify\Support\ServiceProvider;
-use Phpify\Routing\Router;
-use Phpify\Http\Kernel;
+use FlashPHP\Support\ServiceProvider;
+use FlashPHP\Routing\Router;
+use FlashPHP\Http\Kernel;
 
 class RoutingServiceProvider extends ServiceProvider
 {

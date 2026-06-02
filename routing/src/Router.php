@@ -1,8 +1,8 @@
 <?php
 
-namespace Phpify\Routing;
+namespace FlashPHP\Routing;
 
-use Phpify\Http\Request;
+use FlashPHP\Http\Request;
 
 class Router
 {

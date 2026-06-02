@@ -1,5 +1,5 @@
 {
-    "name": "phpify/exception",
+    "name": "flashphp/exception",
     "description": "Phpify Exception component",
     "type": "library",
     "require": {

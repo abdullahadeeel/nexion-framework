@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Phpify\Database\Model;
+use FlashPHP\Database\Model;
 
 class TestModel extends Model
 {

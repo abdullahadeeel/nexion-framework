@@ -1,9 +1,9 @@
 <?php
 
-namespace Phpify\Console\Commands;
+namespace FlashPHP\Console\Commands;
 
-use Phpify\Console\Command;
-use Phpify\Database\Database;
+use FlashPHP\Console\Command;
+use FlashPHP\Database\Database;
 
 class MigrateCommand extends Command
 {
@@ -40,7 +40,7 @@ class MigrateCommand extends Command
                 ) ENGINE=INNODB;");
             }
 
-            $migrationFiles = glob(\Phpify\Foundation\Application::$app->getRootPath() . '/database/migrations/*.sql');
+            $migrationFiles = glob(\FlashPHP\Foundation\Application::$app->getRootPath() . '/database/migrations/*.sql');
             
             if (empty($migrationFiles)) {
                 $this->comment("No migrations found.");

@@ -1,9 +1,9 @@
 <?php
 
-namespace Phpify\Http;
+namespace FlashPHP\Http;
 
-use Phpify\Foundation\Application;
-use Phpify\Routing\Router;
+use FlashPHP\Foundation\Application;
+use FlashPHP\Routing\Router;
 
 class Kernel
 {
@@ -52,7 +52,7 @@ class Kernel
         $next = function (Request $request) use (&$index, $middleware, &$next) {
             if ($index < count($middleware)) {
                 $mwClass = $middleware[$index++];
-                /** @var \Phpify\Middleware\Middleware $mw */
+                /** @var \FlashPHP\Middleware\Middleware $mw */
                 $mw = $this->app->make($mwClass);
                 return $mw->handle($request, $next);
             }

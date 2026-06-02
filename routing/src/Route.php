@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpify\Routing;
+namespace FlashPHP\Routing;
 
 class Route
 {

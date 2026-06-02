@@ -1,8 +1,8 @@
 <?php
 
-namespace Phpify\Support;
+namespace FlashPHP\Support;
 
-use Phpify\Container\Container;
+use FlashPHP\Container\Container;
 
 abstract class ServiceProvider
 {

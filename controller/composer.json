@@ -1,5 +1,5 @@
 {
-    "name": "phpify/controller",
+    "name": "flashphp/controller",
     "description": "Phpify Controller component",
     "type": "library",
     "require": {

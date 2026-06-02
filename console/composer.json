@@ -1,5 +1,5 @@
 {
-    "name": "phpify/console",
+    "name": "flashphp/console",
     "description": "Phpify Console component",
     "type": "library",
     "require": {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Phpify\Database\Connection;
+namespace FlashPHP\Database\Connection;
 
-use Phpify\Database\Utils\SqlParser;
+use FlashPHP\Database\Utils\SqlParser;
 
 class AwsDynamoDbConnection extends BaseConnection
 {

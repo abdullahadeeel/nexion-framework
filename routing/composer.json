@@ -1,5 +1,5 @@
 {
-    "name": "phpify/routing",
+    "name": "flashphp/routing",
     "description": "Phpify Routing component",
     "type": "library",
     "require": {

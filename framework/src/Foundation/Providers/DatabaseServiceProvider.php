@@ -1,9 +1,9 @@
 <?php
 
-namespace Phpify\Foundation\Providers;
+namespace FlashPHP\Foundation\Providers;
 
-use Phpify\Support\ServiceProvider;
-use Phpify\Database\Database;
+use FlashPHP\Support\ServiceProvider;
+use FlashPHP\Database\Database;
 
 class DatabaseServiceProvider extends ServiceProvider
 {

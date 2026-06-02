@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpify\Console;
+namespace FlashPHP\Console;
 
 abstract class Command
 {

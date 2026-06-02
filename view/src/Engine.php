@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpify\View;
+namespace FlashPHP\View;
 
 class Engine
 {

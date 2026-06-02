@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpify\Http;
+namespace FlashPHP\Http;
 
 class Request
 {

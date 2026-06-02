@@ -1,5 +1,5 @@
 {
-    "name": "phpify/database",
+    "name": "flashphp/database",
     "description": "Phpify Database component",
     "type": "library",
     "require": {

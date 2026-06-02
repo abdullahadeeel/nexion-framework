@@ -1,7 +1,7 @@
 <?php
 
-use Phpify\Foundation\Application;
-use Phpify\Http\Response;
+use FlashPHP\Foundation\Application;
+use FlashPHP\Http\Response;
 
 if (!function_exists('env')) {
     function env(string $key, $default = null)
@@ -23,17 +23,17 @@ if (!function_exists('app')) {
     function app(string $abstract = null, array $parameters = [])
     {
         if (is_null($abstract)) {
-            return \Phpify\Container\Container::getInstance();
+            return \FlashPHP\Container\Container::getInstance();
         }
 
-        return \Phpify\Container\Container::getInstance()->make($abstract, $parameters);
+        return \FlashPHP\Container\Container::getInstance()->make($abstract, $parameters);
     }
 }
 
 if (!function_exists('request')) {
     function request()
     {
-        return app(\Phpify\Http\Request::class);
+        return app(\FlashPHP\Http\Request::class);
     }
 }
 
@@ -47,7 +47,7 @@ if (!function_exists('response')) {
 if (!function_exists('view')) {
     function view(string $name, array $data = [])
     {
-        return app(\Phpify\View\Engine::class)->render($name, $data);
+        return app(\FlashPHP\View\Engine::class)->render($name, $data);
     }
 }
 
@@ -61,7 +61,7 @@ if (!function_exists('redirect')) {
 if (!function_exists('route')) {
     function route(string $name, array $params = [])
     {
-        return app(\Phpify\Routing\Router::class)->route($name, $params);
+        return app(\FlashPHP\Routing\Router::class)->route($name, $params);
     }
 }
 

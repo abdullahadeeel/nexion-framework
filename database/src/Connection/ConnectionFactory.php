@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpify\Database\Connection;
+namespace FlashPHP\Database\Connection;
 
 class ConnectionFactory
 {

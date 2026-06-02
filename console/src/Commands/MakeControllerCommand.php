@@ -1,8 +1,8 @@
 <?php
 
-namespace Phpify\Console\Commands;
+namespace FlashPHP\Console\Commands;
 
-use Phpify\Console\Command;
+use FlashPHP\Console\Command;
 
 class MakeControllerCommand extends Command
 {
@@ -21,14 +21,14 @@ class MakeControllerCommand extends Command
             $name .= 'Controller';
         }
 
-        $path = \Phpify\Foundation\Application::$app->getRootPath() . "/app/Controllers/$name.php";
+        $path = \FlashPHP\Foundation\Application::$app->getRootPath() . "/app/Controllers/$name.php";
 
         if (file_exists($path)) {
             $this->error("Controller already exists!");
             return 1;
         }
 
-        $content = "<?php\n\nnamespace App\Controllers;\n\nuse Phpify\Controller\BaseController;\nuse Phpify\Http\Request;\n\nclass $name extends BaseController\n{\n    public function index(Request \$request)\n    {\n        // return view('index');\n    }\n}\n";
+        $content = "<?php\n\nnamespace App\Controllers;\n\nuse FlashPHP\Controller\BaseController;\nuse FlashPHP\Http\Request;\n\nclass $name extends BaseController\n{\n    public function index(Request \$request)\n    {\n        // return view('index');\n    }\n}\n";
 
         if (!is_dir(dirname($path))) {
             mkdir(dirname($path), 0755, true);

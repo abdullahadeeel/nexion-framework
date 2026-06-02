@@ -1,5 +1,5 @@
 { 
-    "name": "phpify/config",
+    "name": "flashphp/config",
     "description": "Phpify Config component",
     "type": "library",
     "require": {

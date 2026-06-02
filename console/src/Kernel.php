@@ -1,9 +1,9 @@
 <?php
 
-namespace Phpify\Console;
+namespace FlashPHP\Console;
 
-use Phpify\Foundation\Application as BaseApplication;
-use Phpify\Console\Command;
+use FlashPHP\Foundation\Application as BaseApplication;
+use FlashPHP\Console\Command;
 
 class Kernel
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpify\Database;
+namespace FlashPHP\Database;
 
 abstract class Model
 {
