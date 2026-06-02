@@ -17,6 +17,8 @@ jobs:
 
       - name: Split ${{ matrix.package }}
         uses: symplify/monorepo-split-github-action@main
+        env:
+          PAT: ${{ secrets.GH_PAT }}
         with:
           package_directory: '${{ matrix.package }}'
           repository_organization: 'abdullahadeeel'
@@ -24,4 +26,3 @@ jobs:
           branch: 'main'
           user_name: 'phpify-bot'
           user_email: 'bot@phpify.io'
-          github_token: ${{ secrets.GH_PAT }}
