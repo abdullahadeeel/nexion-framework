@@ -20,7 +20,7 @@ jobs:
         env:
           PAT: ${{ secrets.GH_PAT }}
         with:
-          package_directory: '${{ matrix.package }}'
+          package_directory: 'phpify-framework/${{ matrix.package }}'
           repository_organization: 'abdullahadeeel'
           repository_name: '${{ matrix.package }}'
           branch: 'master'
