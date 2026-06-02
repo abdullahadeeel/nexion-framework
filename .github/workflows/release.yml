@@ -23,6 +23,6 @@ jobs:
           package_directory: '${{ matrix.package }}'
           repository_organization: 'abdullahadeeel'
           repository_name: '${{ matrix.package }}'
-          branch: 'main'
+          branch: 'master'
           user_name: 'phpify-bot'
           user_email: 'bot@phpify.io'
