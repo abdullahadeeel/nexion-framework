@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
 
       - name: Split ${{ matrix.package }}
-        uses: symplify/monorepo-split-github-action@v3.2
+        uses: symplify/monorepo-split-github-action@main
         with:
           package-directory: '${{ matrix.package }}'
           repository-organization: 'abdullahadeeel'
