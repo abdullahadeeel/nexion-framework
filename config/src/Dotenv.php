@@ -1,6 +1,6 @@
 <?php
 
-namespace FlashPHP\Config;
+namespace Nexion\Config;
 
 class Dotenv
 {

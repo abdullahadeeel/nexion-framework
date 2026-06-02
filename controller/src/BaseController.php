@@ -1,9 +1,9 @@
 <?php
 
-namespace FlashPHP\Controller;
+namespace Nexion\Controller;
 
-use FlashPHP\Http\Response;
-use FlashPHP\Foundation\Application;
+use Nexion\Http\Response;
+use Nexion\Foundation\Application;
 
 abstract class BaseController
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace FlashPHP\Console\Commands;
+namespace Nexion\Console\Commands;
 
-use FlashPHP\Console\Command;
-use FlashPHP\Database\Database;
+use Nexion\Console\Command;
+use Nexion\Database\Database;
 
 class MigrateCommand extends Command
 {
@@ -40,7 +40,7 @@ class MigrateCommand extends Command
                 ) ENGINE=INNODB;");
             }
 
-            $migrationFiles = glob(\FlashPHP\Foundation\Application::$app->getRootPath() . '/database/migrations/*.sql');
+            $migrationFiles = glob(\Nexion\Foundation\Application::$app->getRootPath() . '/database/migrations/*.sql');
             
             if (empty($migrationFiles)) {
                 $this->comment("No migrations found.");

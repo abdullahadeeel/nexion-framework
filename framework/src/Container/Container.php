@@ -1,6 +1,6 @@
 <?php
 
-namespace FlashPHP\Container;
+namespace Nexion\Container;
 
 use Closure;
 use Exception;

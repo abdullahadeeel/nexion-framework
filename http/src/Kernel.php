@@ -1,9 +1,9 @@
 <?php
 
-namespace FlashPHP\Http;
+namespace Nexion\Http;
 
-use FlashPHP\Foundation\Application;
-use FlashPHP\Routing\Router;
+use Nexion\Foundation\Application;
+use Nexion\Routing\Router;
 
 class Kernel
 {
@@ -52,7 +52,7 @@ class Kernel
         $next = function (Request $request) use (&$index, $middleware, &$next) {
             if ($index < count($middleware)) {
                 $mwClass = $middleware[$index++];
-                /** @var \FlashPHP\Middleware\Middleware $mw */
+                /** @var \Nexion\Middleware\Middleware $mw */
                 $mw = $this->app->make($mwClass);
                 return $mw->handle($request, $next);
             }

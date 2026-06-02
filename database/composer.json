@@ -1,5 +1,5 @@
 {
-    "name": "flashphp/database",
+    "name": "nexion/database",
     "description": "Phpify Database component",
     "type": "library",
     "require": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace FlashPHP\Console;
+namespace Nexion\Console;
 
 class Application
 {

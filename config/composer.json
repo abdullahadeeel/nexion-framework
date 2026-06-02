@@ -1,5 +1,5 @@
 { 
-    "name": "flashphp/config",
+    "name": "nexion/config",
     "description": "Phpify Config component",
     "type": "library",
     "require": {

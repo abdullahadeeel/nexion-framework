@@ -1,5 +1,5 @@
 {
-    "name": "flashphp/view",
+    "name": "nexion/view",
     "description": "Phpify View component",
     "type": "library",
     "require": {

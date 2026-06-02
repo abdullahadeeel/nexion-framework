@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use FlashPHP\Database\Model;
+use Nexion\Database\Model;
 
 class TestModel extends Model
 {

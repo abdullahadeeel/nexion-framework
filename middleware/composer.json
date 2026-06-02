@@ -1,5 +1,5 @@
 {
-    "name": "flashphp/middleware",
+    "name": "nexion/middleware",
     "description": "Phpify Middleware component",
     "type": "library",
     "require": {

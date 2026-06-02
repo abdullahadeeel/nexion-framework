@@ -1,5 +1,5 @@
 {
-    "name": "flashphp/controller",
+    "name": "nexion/controller",
     "description": "Phpify Controller component",
     "type": "library",
     "require": {

@@ -1,8 +1,8 @@
 <?php
 
-namespace FlashPHP\Database\Connection;
+namespace Nexion\Database\Connection;
 
-use FlashPHP\Database\Utils\SqlParser;
+use Nexion\Database\Utils\SqlParser;
 
 class AwsDynamoDbConnection extends BaseConnection
 {

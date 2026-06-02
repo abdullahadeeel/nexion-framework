@@ -1,18 +1,18 @@
 {
-    "name": "flashphp/framework",
+    "name": "nexion/framework",
     "description": "The Phpify Framework",
     "type": "library",
     "require": {
         "php": ">=8.0",
-        "flashphp/config": "*",
-        "flashphp/console": "*",
-        "flashphp/controller": "*",
-        "flashphp/database": "*",
-        "flashphp/exception": "*",
-        "flashphp/http": "*",
-        "flashphp/middleware": "*",
-        "flashphp/routing": "*",
-        "flashphp/view": "*"
+        "nexion/config": "*",
+        "nexion/console": "*",
+        "nexion/controller": "*",
+        "nexion/database": "*",
+        "nexion/exception": "*",
+        "nexion/http": "*",
+        "nexion/middleware": "*",
+        "nexion/routing": "*",
+        "nexion/view": "*"
     },
     "autoload": {
         "psr-4": {

@@ -1,8 +1,8 @@
 <?php
 
-namespace FlashPHP\Console\Commands;
+namespace Nexion\Console\Commands;
 
-use FlashPHP\Console\Command;
+use Nexion\Console\Command;
 
 class MakeModelCommand extends Command
 {
@@ -17,14 +17,14 @@ class MakeModelCommand extends Command
         }
 
         $name = $args[0];
-        $path = \FlashPHP\Foundation\Application::$app->getRootPath() . "/app/Models/$name.php";
+        $path = \Nexion\Foundation\Application::$app->getRootPath() . "/app/Models/$name.php";
 
         if (file_exists($path)) {
             $this->error("Model already exists!");
             return 1;
         }
 
-        $content = "<?php\n\nnamespace App\Models;\n\nuse FlashPHP\Database\Model;\n\nclass $name extends Model\n{\n    protected string \$table = '" . strtolower($name) . "s';\n}\n";
+        $content = "<?php\n\nnamespace App\Models;\n\nuse Nexion\Database\Model;\n\nclass $name extends Model\n{\n    protected string \$table = '" . strtolower($name) . "s';\n}\n";
 
         if (!is_dir(dirname($path))) {
             mkdir(dirname($path), 0755, true);

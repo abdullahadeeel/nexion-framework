@@ -1,9 +1,9 @@
 <?php
 
-namespace FlashPHP\Database;
+namespace Nexion\Database;
 
-use FlashPHP\Database\Connection\ConnectionInterface;
-use FlashPHP\Database\Connection\ConnectionFactory;
+use Nexion\Database\Connection\ConnectionInterface;
+use Nexion\Database\Connection\ConnectionFactory;
 
 class Database
 {

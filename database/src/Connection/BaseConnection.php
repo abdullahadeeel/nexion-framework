@@ -1,6 +1,6 @@
 <?php
 
-namespace FlashPHP\Database\Connection;
+namespace Nexion\Database\Connection;
 
 abstract class BaseConnection implements ConnectionInterface
 {

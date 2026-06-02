@@ -1,6 +1,6 @@
 <?php
 
-namespace FlashPHP\Database;
+namespace Nexion\Database;
 
 abstract class Model
 {

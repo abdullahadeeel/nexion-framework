@@ -1,9 +1,9 @@
 <?php
 
-namespace FlashPHP\Console;
+namespace Nexion\Console;
 
-use FlashPHP\Foundation\Application as BaseApplication;
-use FlashPHP\Console\Command;
+use Nexion\Foundation\Application as BaseApplication;
+use Nexion\Console\Command;
 
 class Kernel
 {

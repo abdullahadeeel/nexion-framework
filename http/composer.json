@@ -1,5 +1,5 @@
 {
-    "name": "flashphp/http",
+    "name": "nexion/http",
     "description": "Phpify Http component",
     "type": "library",
     "require": {

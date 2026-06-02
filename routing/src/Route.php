@@ -1,6 +1,6 @@
 <?php
 
-namespace FlashPHP\Routing;
+namespace Nexion\Routing;
 
 class Route
 {

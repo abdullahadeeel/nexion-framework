@@ -1,8 +1,8 @@
 <?php
 
-namespace FlashPHP\Routing;
+namespace Nexion\Routing;
 
-use FlashPHP\Http\Request;
+use Nexion\Http\Request;
 
 class Router
 {

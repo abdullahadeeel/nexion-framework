@@ -1,8 +1,8 @@
 <?php
 
-namespace FlashPHP\Console\Commands;
+namespace Nexion\Console\Commands;
 
-use FlashPHP\Console\Command;
+use Nexion\Console\Command;
 
 class ServeCommand extends Command
 {

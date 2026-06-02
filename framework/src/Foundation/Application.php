@@ -1,11 +1,11 @@
 <?php
 
-namespace FlashPHP\Foundation;
+namespace Nexion\Foundation;
 
-use FlashPHP\Container\Container;
-use FlashPHP\Http\Request;
-use FlashPHP\Http\Response;
-use FlashPHP\Support\ServiceProvider;
+use Nexion\Container\Container;
+use Nexion\Http\Request;
+use Nexion\Http\Response;
+use Nexion\Support\ServiceProvider;
 
 class Application extends Container
 {
@@ -62,18 +62,18 @@ class Application extends Container
         $this->instance(Request::class, $request);
         $this->boot();
 
-        /** @var \FlashPHP\Http\Kernel $kernel */
-        $kernel = $this->make(\FlashPHP\Http\Kernel::class);
+        /** @var \Nexion\Http\Kernel $kernel */
+        $kernel = $this->make(\Nexion\Http\Kernel::class);
         return $kernel->handle($request);
     }
 
     public function __get($key)
     {
         $aliases = [
-            'router' => \FlashPHP\Routing\Router::class,
-            'db' => \FlashPHP\Database\Database::class,
-            'view' => \FlashPHP\View\Engine::class,
-            'request' => \FlashPHP\Http\Request::class,
+            'router' => \Nexion\Routing\Router::class,
+            'db' => \Nexion\Database\Database::class,
+            'view' => \Nexion\View\Engine::class,
+            'request' => \Nexion\Http\Request::class,
         ];
 
         if (isset($aliases[$key])) {

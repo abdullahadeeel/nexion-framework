@@ -1,6 +1,6 @@
 <?php
 
-namespace FlashPHP\View;
+namespace Nexion\View;
 
 class Engine
 {

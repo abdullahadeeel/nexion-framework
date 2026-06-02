@@ -1,6 +1,6 @@
 <?php
 
-namespace FlashPHP\Http;
+namespace Nexion\Http;
 
 class Response
 {

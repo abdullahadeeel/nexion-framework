@@ -1,9 +1,9 @@
 <?php
 
-namespace FlashPHP\Foundation\Providers;
+namespace Nexion\Foundation\Providers;
 
-use FlashPHP\Support\ServiceProvider;
-use FlashPHP\View\Engine;
+use Nexion\Support\ServiceProvider;
+use Nexion\View\Engine;
 
 class ViewServiceProvider extends ServiceProvider
 {

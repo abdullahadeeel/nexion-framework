@@ -1,6 +1,6 @@
 <?php
 
-namespace FlashPHP\Database\Connection;
+namespace Nexion\Database\Connection;
 
 class ConnectionFactory
 {

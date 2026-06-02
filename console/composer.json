@@ -1,5 +1,5 @@
 {
-    "name": "flashphp/console",
+    "name": "nexion/console",
     "description": "Phpify Console component",
     "type": "library",
     "require": {

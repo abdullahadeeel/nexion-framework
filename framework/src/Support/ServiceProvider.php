@@ -1,8 +1,8 @@
 <?php
 
-namespace FlashPHP\Support;
+namespace Nexion\Support;
 
-use FlashPHP\Container\Container;
+use Nexion\Container\Container;
 
 abstract class ServiceProvider
 {

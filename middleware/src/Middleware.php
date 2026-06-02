@@ -1,9 +1,9 @@
 <?php
 
-namespace FlashPHP\Middleware;
+namespace Nexion\Middleware;
 
-use FlashPHP\Http\Request;
-use FlashPHP\Http\Response;
+use Nexion\Http\Request;
+use Nexion\Http\Response;
 
 interface Middleware
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace FlashPHP\Database\Utils;
+namespace Nexion\Database\Utils;
 
 class SqlParser
 {

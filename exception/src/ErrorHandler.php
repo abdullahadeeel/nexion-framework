@@ -1,9 +1,9 @@
 <?php
 
-namespace FlashPHP\Exception;
+namespace Nexion\Exception;
 
 use Throwable;
-use FlashPHP\Http\Response;
+use Nexion\Http\Response;
 
 class ErrorHandler
 {
@@ -17,12 +17,12 @@ class ErrorHandler
     {
         $isCli = PHP_SAPI === 'cli';
         $isJson = false;
-        if (!$isCli && isset(\FlashPHP\Foundation\Application::$app)) {
-            $isJson = \FlashPHP\Foundation\Application::$app->request->isJson();
+        if (!$isCli && isset(\Nexion\Foundation\Application::$app)) {
+            $isJson = \Nexion\Foundation\Application::$app->request->isJson();
         }
 
         $statusCode = 500;
-        if ($exception instanceof \FlashPHP\Http\ValidationException) {
+        if ($exception instanceof \Nexion\Http\ValidationException) {
             $statusCode = 422;
         }
 
@@ -43,7 +43,7 @@ class ErrorHandler
                 'line' => $exception->getLine(),
                 'trace' => explode("\n", $exception->getTraceAsString())
             ];
-            if ($exception instanceof \FlashPHP\Http\ValidationException) {
+            if ($exception instanceof \Nexion\Http\ValidationException) {
                 $data['errors'] = $exception->getErrors();
             }
             Response::json($data, $statusCode)->send();

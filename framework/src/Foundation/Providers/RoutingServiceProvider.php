@@ -1,10 +1,10 @@
 <?php
 
-namespace FlashPHP\Foundation\Providers;
+namespace Nexion\Foundation\Providers;
 
-use FlashPHP\Support\ServiceProvider;
-use FlashPHP\Routing\Router;
-use FlashPHP\Http\Kernel;
+use Nexion\Support\ServiceProvider;
+use Nexion\Routing\Router;
+use Nexion\Http\Kernel;
 
 class RoutingServiceProvider extends ServiceProvider
 {

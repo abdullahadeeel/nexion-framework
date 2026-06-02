@@ -1,9 +1,9 @@
 <?php
 
-namespace FlashPHP\Foundation\Providers;
+namespace Nexion\Foundation\Providers;
 
-use FlashPHP\Support\ServiceProvider;
-use FlashPHP\Database\Database;
+use Nexion\Support\ServiceProvider;
+use Nexion\Database\Database;
 
 class DatabaseServiceProvider extends ServiceProvider
 {
