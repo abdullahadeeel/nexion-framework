@@ -1,0 +1,27 @@
+name: Release and Split
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package: [view, routing, http, framework, database, controller, console, config, exception, middleware]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Split ${{ matrix.package }}
+        uses: symplify/monorepo-split-github-action@v3.2
+        with:
+          package-directory: '${{ matrix.package }}'
+          repository-organization: 'abdullahadeeel'
+          repository-name: '${{ matrix.package }}'
+          branch: 'main'
+          git-user-name: 'phpify-bot'
+          git-user-email: 'bot@phpify.io'
+          github-token: ${{ secrets.GH_PAT }}
