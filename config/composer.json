@@ -1,4 +1,5 @@
-{
+// something
+{ 
     "name": "phpify/config",
     "description": "Phpify Config component",
     "type": "library",
