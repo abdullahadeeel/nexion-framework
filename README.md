@@ -30,7 +30,7 @@ cd nexion-framework
 ## The Starter Template
 
 Looking to see it in action? We have a starter template that implements a Todo application featuring a modern glassmorphism UI:
-[Nexion Starter Template](https://github.com/abdullahdeeel/nexion)
+[Nexion Starter Template](https://github.com/abdullahadeeel/nexion)
 
 ## Contributing
 
