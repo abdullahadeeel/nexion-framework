@@ -24,7 +24,7 @@ cd nexion-framework
 ```
 
 
-2. **Explore the Packages:** Check the `packages/` directory to see the core components and how they interact.
+2. **Explore the Packages:** Check the directory to see the core components and how they interact.
 3. **Contribute:** Feel free to submit PRs, add new features, or use your preferred AI model to suggest architectural improvements or refactors.
 
 ## The Starter Template
